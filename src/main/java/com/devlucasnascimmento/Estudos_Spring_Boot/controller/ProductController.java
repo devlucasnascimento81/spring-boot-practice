@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ProductController {
 
-    @GetMapping("/products")
+    @GetMapping("")
     public String getProductsByName(@RequestParam String name ){
         return "Searching for product with ID: " + name;
     }
